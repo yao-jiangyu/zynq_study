@@ -6,14 +6,14 @@ vlib rtl_work
 vmap work rtl_work
        
 
-vlog     	../../src/async_fifo.v
-vlog     	../../sim/tb_src/tb_async_fifo.v
+vlog     	../../src/contrast_adjust.v
+vlog     	../../sim/tb_src/contrast_adjust_tb.v
 
 
 
 set rnd_seed [clock seconds]
 
-vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc" tb_async_fifo
+vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc" contrast_adjust_tb
 
 do wave.do
 

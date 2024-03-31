@@ -1,6 +1,6 @@
-# //  ModelSim SE-64 2019.2 Apr 17 2019
+# //  ModelSim SE-64 2020.4 Oct 13 2020
 # //
-# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  Copyright 1991-2020 Mentor Graphics Corporation
 # //  All Rights Reserved.
 # //
 # //  ModelSim SE-64 and its associated documentation contain trade
@@ -17,62 +17,193 @@
 # }
 # vlib rtl_work
 # vmap work rtl_work
-# Model Technology ModelSim SE-64 vmap 2019.2 Lib Mapping Utility 2019.04 Apr 17 2019
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
 # vmap work rtl_work 
 # Modifying modelsim.ini
 #        
 # 
-# vlog     	../../src/async_fifo.v
-# Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 01:50:24 on Nov 15,2023
-# vlog -reportprogress 300 ../../src/async_fifo.v 
-# -- Compiling module async_fifo
+# vlog     	../../src/contrast_adjust.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:30:06 on Mar 31,2024
+# vlog -reportprogress 300 ../../src/contrast_adjust.v 
+# -- Compiling module contrast_adjust
 # 
 # Top level modules:
-# 	async_fifo
-# End time: 01:50:24 on Nov 15,2023, Elapsed time: 0:00:00
+# 	contrast_adjust
+# End time: 20:30:06 on Mar 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog     	../../sim/tb_src/tb_async_fifo.sv
-# Model Technology ModelSim SE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
-# Start time: 01:50:24 on Nov 15,2023
-# vlog -reportprogress 300 ../../sim/tb_src/tb_async_fifo.sv 
-# -- Compiling module tb_async_fifo
+# vlog     	../../sim/tb_src/contrast_adjust_tb.v
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 20:30:06 on Mar 31,2024
+# vlog -reportprogress 300 ../../sim/tb_src/contrast_adjust_tb.v 
+# -- Compiling module contrast_adjust_tb
 # 
 # Top level modules:
-# 	tb_async_fifo
-# End time: 01:50:24 on Nov 15,2023, Elapsed time: 0:00:00
+# 	contrast_adjust_tb
+# End time: 20:30:06 on Mar 31,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # 
 # 
 # set rnd_seed [clock seconds]
-# 1699984224
+# 1711888206
 # 
-# vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc" tb_async_fifo
-# vsim -t 1ps -L rtl_work -L work "+SEED=1699984224" -voptargs=""+acc"" tb_async_fifo 
-# Start time: 01:50:24 on Nov 15,2023
+# vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc" contrast_adjust_tb
+# vsim -t 1ps -L rtl_work -L work "+SEED=1711888206" -voptargs=""+acc"" contrast_adjust_tb 
+# Start time: 20:30:06 on Mar 31,2024
 # ** Note: (vsim-3812) Design is being optimized...
-# Loading sv_std.std
-# Loading work.tb_async_fifo(fast)
-# Loading work.async_fifo(fast)
+# Loading work.contrast_adjust_tb(fast)
+# Loading work.contrast_adjust(fast)
 # 
 # do wave.do
+# onerror {resume}
+# quietly WaveActivateNextPane {} 0
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wclk
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wclk'.
+# Executing ONERROR command at macro ./wave.do line 3
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wrst_n
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wrst_n'.
+# Executing ONERROR command at macro ./wave.do line 4
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wreq
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wreq'.
+# Executing ONERROR command at macro ./wave.do line 5
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wdata
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wdata'.
+# Executing ONERROR command at macro ./wave.do line 6
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wfull
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wfull'.
+# Executing ONERROR command at macro ./wave.do line 7
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wfull_almst
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wfull_almst'.
+# Executing ONERROR command at macro ./wave.do line 8
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rclk
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rclk'.
+# Executing ONERROR command at macro ./wave.do line 9
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rrst_n
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rrst_n'.
+# Executing ONERROR command at macro ./wave.do line 10
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rreq
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rreq'.
+# Executing ONERROR command at macro ./wave.do line 11
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rdata
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rdata'.
+# Executing ONERROR command at macro ./wave.do line 12
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rdvld
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rdvld'.
+# Executing ONERROR command at macro ./wave.do line 13
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/repty
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/repty'.
+# Executing ONERROR command at macro ./wave.do line 14
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/repty_almst
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/repty_almst'.
+# Executing ONERROR command at macro ./wave.do line 15
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rptrg_wclk1
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rptrg_wclk1'.
+# Executing ONERROR command at macro ./wave.do line 16
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rptrg_wclk2
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rptrg_wclk2'.
+# Executing ONERROR command at macro ./wave.do line 17
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rptrg
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rptrg'.
+# Executing ONERROR command at macro ./wave.do line 18
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wptrg_rclk1
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wptrg_rclk1'.
+# Executing ONERROR command at macro ./wave.do line 19
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wptrg_rclk2
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wptrg_rclk2'.
+# Executing ONERROR command at macro ./wave.do line 20
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wptrg
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wptrg'.
+# Executing ONERROR command at macro ./wave.do line 21
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/repty_t
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/repty_t'.
+# Executing ONERROR command at macro ./wave.do line 22
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/raddr
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/raddr'.
+# Executing ONERROR command at macro ./wave.do line 23
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rptrb
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rptrb'.
+# Executing ONERROR command at macro ./wave.do line 24
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rptrb_nxt
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rptrb_nxt'.
+# Executing ONERROR command at macro ./wave.do line 25
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rptrg_nxt
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rptrg_nxt'.
+# Executing ONERROR command at macro ./wave.do line 26
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/waddr
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/waddr'.
+# Executing ONERROR command at macro ./wave.do line 27
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wptrb
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wptrb'.
+# Executing ONERROR command at macro ./wave.do line 28
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wptrb_nxt
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wptrb_nxt'.
+# Executing ONERROR command at macro ./wave.do line 29
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wptrg_nxt
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wptrg_nxt'.
+# Executing ONERROR command at macro ./wave.do line 30
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wptr_g2b
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wptr_g2b'.
+# Executing ONERROR command at macro ./wave.do line 31
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rptr_g2b
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rptr_g2b'.
+# Executing ONERROR command at macro ./wave.do line 32
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/rgap
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/rgap'.
+# Executing ONERROR command at macro ./wave.do line 33
+# add wave -noupdate /tb_async_fifo/inst_async_fifo/wgap
+# ** UI-Msg: (vish-4014) No objects found matching '/tb_async_fifo/inst_async_fifo/wgap'.
+# Executing ONERROR command at macro ./wave.do line 34
+# TreeUpdate [SetDefaultTree]
+# WaveRestoreCursors {{Cursor 1} {1570000 ps} 0}
+# quietly wave cursor active 1
+# configure wave -namecolwidth 150
+# configure wave -valuecolwidth 100
+# configure wave -justifyvalue left
+# configure wave -signalnamewidth 1
+# configure wave -snapdistance 10
+# configure wave -datasetprefix 0
+# configure wave -rowmargin 4
+# configure wave -childrowmargin 2
+# configure wave -gridoffset 0
+# configure wave -gridperiod 1
+# configure wave -griddelta 40
+# configure wave -timeline 0
+# configure wave -timelineunits ps
+# update
+# WaveRestoreZoom {0 ps} {8558550 ps}
 # 
 # run -all
-# ** Note: $finish    : ../../sim/tb_src/tb_async_fifo.sv(162)
-#    Time: 8151 ns  Iteration: 1  Instance: /tb_async_fifo
+# start to write bmp file
+# start to write bmp file
+# Write bmp file complete, Close the file
+# ** Note: $finish    : ../../sim/tb_src/contrast_adjust_tb.v(111)
+#    Time: 822020 ns  Iteration: 1  Instance: /contrast_adjust_tb
 # 1
-# Break in Module tb_async_fifo at ../../sim/tb_src/tb_async_fifo.sv line 162
-add wave -position insertpoint sim:/tb_async_fifo/inst_async_fifo/*
+# Break in Module contrast_adjust_tb at ../../sim/tb_src/contrast_adjust_tb.v line 111
 restart
 # ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_async_fifo(fast)
-# Loading work.async_fifo(fast)
+# Loading work.contrast_adjust_tb(fast)
+# Loading work.contrast_adjust(fast)
 run -all
-# ** Note: $finish    : ../../sim/tb_src/tb_async_fifo.sv(162)
-#    Time: 8151 ns  Iteration: 1  Instance: /tb_async_fifo
+# start to write bmp file
+# start to write bmp file
+# Write bmp file complete, Close the file
+# ** Note: $finish    : ../../sim/tb_src/contrast_adjust_tb.v(111)
+#    Time: 822020 ns  Iteration: 1  Instance: /contrast_adjust_tb
 # 1
-# Break in Module tb_async_fifo at ../../sim/tb_src/tb_async_fifo.sv line 162
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/Desktop/Design/FPGA_Project/FIFO/async_fifo/rtl/sim/sim_modelsim/wave.do
-# End time: 19:09:39 on Nov 15,2023, Elapsed time: 17:19:15
-# Errors: 1, Warnings: 0
+# Break in Module contrast_adjust_tb at ../../sim/tb_src/contrast_adjust_tb.v line 111
+add wave sim:/contrast_adjust_tb/*
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.contrast_adjust_tb(fast)
+# Loading work.contrast_adjust(fast)
+run -all
+# start to write bmp file
+# start to write bmp file
+# Write bmp file complete, Close the file
+# ** Note: $finish    : ../../sim/tb_src/contrast_adjust_tb.v(111)
+#    Time: 822020 ns  Iteration: 1  Instance: /contrast_adjust_tb
+# 1
+# Break in Module contrast_adjust_tb at ../../sim/tb_src/contrast_adjust_tb.v line 111
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/code/zynq_pri/zynq_study/contrast_adjust/rtl/sim/sim_modelsim/wave.do
