@@ -1,0 +1,308 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  1 14:55:53 2024
+# Process ID: 5184
+# Current directory: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1
+# Command line: vivado.exe -log ip_1port_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ip_1port_ram.tcl
+# Log file: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/ip_1port_ram.vds
+# Journal file: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ip_1port_ram.tcl -notrace
+Command: synth_design -top ip_1port_ram -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16628 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 369.586 ; gain = 100.922
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ip_1port_ram' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+INFO: [Synth 8-638] synthesizing module 'ram_rw' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:64]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/.Xil/Vivado-5184-LAPTOP-SC6EAKJG/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (1#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/.Xil/Vivado-5184-LAPTOP-SC6EAKJG/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0_inst'. This will prevent further optimization [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:64]
+INFO: [Synth 8-256] done synthesizing module 'ram_rw' (2#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_32x8' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/.Xil/Vivado-5184-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram_32x8' (3#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/.Xil/Vivado-5184-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+WARNING: [Synth 8-3848] Net a in module/entity ip_1port_ram does not have driver. [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ip_1port_ram' (4#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+WARNING: [Synth 8-3331] design ip_1port_ram has unconnected port a
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 422.094 ; gain = 153.430
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 422.094 ; gain = 153.430
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/.Xil/Vivado-5184-LAPTOP-SC6EAKJG/dcp2/ram_32x8_in_context.xdc] for cell 'ram_32x8_inst'
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/.Xil/Vivado-5184-LAPTOP-SC6EAKJG/dcp2/ram_32x8_in_context.xdc] for cell 'ram_32x8_inst'
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/.Xil/Vivado-5184-LAPTOP-SC6EAKJG/dcp3/ila_0_in_context.xdc] for cell 'ram_rw_inst/ila_0_inst'
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/.Xil/Vivado-5184-LAPTOP-SC6EAKJG/dcp3/ila_0_in_context.xdc] for cell 'ram_rw_inst/ila_0_inst'
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ip_1port_ram_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ip_1port_ram_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 781.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 781.863 ; gain = 513.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 781.863 ; gain = 513.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ram_32x8_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ram_rw_inst/ila_0_inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 781.863 ; gain = 513.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:26 . Memory (MB): peak = 781.863 ; gain = 513.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ram_rw 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design ip_1port_ram has unconnected port a
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 781.863 ; gain = 513.199
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 781.863 ; gain = 513.199
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 800.277 ; gain = 531.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:36 . Memory (MB): peak = 801.094 ; gain = 532.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 801.094 ; gain = 532.430
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 801.094 ; gain = 532.430
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 801.094 ; gain = 532.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 801.094 ; gain = 532.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 801.094 ; gain = 532.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 801.094 ; gain = 532.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
+|2     |ram_32x8      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |ila_0    |     1|
+|2     |ram_32x8 |     1|
+|3     |BUFG     |     1|
+|4     |LUT1     |     1|
+|5     |LUT2     |     4|
+|6     |LUT3     |     2|
+|7     |LUT4     |     4|
+|8     |LUT5     |     4|
+|9     |LUT6     |     5|
+|10    |FDCE     |    20|
+|11    |IBUF     |     2|
+|12    |OBUFT    |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------+-------+------+
+|      |Instance      |Module |Cells |
++------+--------------+-------+------+
+|1     |top           |       |    52|
+|2     |  ram_rw_inst |ram_rw |    40|
++------+--------------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 801.094 ; gain = 532.430
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 801.094 ; gain = 172.660
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:37 . Memory (MB): peak = 801.094 ; gain = 532.430
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+21 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 803.324 ; gain = 535.195
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint 'C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/ip_1port_ram.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ip_1port_ram_utilization_synth.rpt -pb ip_1port_ram_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 803.324 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  1 14:56:41 2024...

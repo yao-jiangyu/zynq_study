@@ -1,0 +1,442 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  1 11:51:41 2024
+# Process ID: 18236
+# Current directory: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn
+# Command line: vivado.exe -mode tcl -source script/create_prj.tcl
+# Log file: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/vivado.log
+# Journal file: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn\vivado.jou
+#-----------------------------------------------------------
+source script/create_prj.tcl
+# set DESIGN_TOP ip_1port_ram
+# set XDC_FILE ./script/top.xdc
+# create_project top -part xc7z020clg400-2
+# read_xdc $XDC_FILE
+# set_param general.maxThreads 8
+# source ./script/read_src.tcl
+## add_files ../src/ip_1port_ram.v
+## add_files ../src/ram_rw.v
+# set_property top $DESIGN_TOP [current_fileset]
+Vivado% start_gui
+update_compile_order -fileset sources_1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name ram_32x8 -dir c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {ram_32x8} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {32} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Register_PortA_Output_of_Memory_Primitives {false}] [get_ips ram_32x8]
+WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'ram_32x8' to 'ram_32x8' is not allowed and is ignored.
+generate_target {instantiation_template} [get_files c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ram_32x8'...
+generate_target all [get_files  c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ram_32x8'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ram_32x8'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'ram_32x8'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ram_32x8'...
+catch { config_ip_cache -export [get_ips -all ram_32x8] }
+export_ip_user_files -of_objects [get_files c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.xci]
+launch_runs -jobs 8 ram_32x8_synth_1
+[Mon Apr  1 11:54:15 2024] Launched ram_32x8_synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/ram_32x8_synth_1/runme.log
+export_simulation -of_objects [get_files c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.xci] -directory C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.ip_user_files/sim_scripts -ip_user_files_dir C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.ip_user_files -ipstatic_source_dir C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.cache/compile_simlib/modelsim} {questa=C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.cache/compile_simlib/questa} {riviera=C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.cache/compile_simlib/riviera} {activehdl=C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-2
+Top: ip_1port_ram
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1141.129 ; gain = 94.324
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ip_1port_ram' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+INFO: [Synth 8-638] synthesizing module 'ram_rw' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ram_rw' (1#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_32x8' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram_32x8' (2#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ip_1port_ram' (3#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[7]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[6]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[5]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[4]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[3]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[2]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[1]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1181.012 ; gain = 134.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1181.012 ; gain = 134.207
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.dcp' for cell 'ram_32x8_inst'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1335.629 ; gain = 288.824
+14 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1335.629 ; gain = 288.824
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr  1 13:58:35 2024] Launched synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/runme.log
+[Mon Apr  1 13:58:35 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr  1 14:02:52 2024] Launched synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/runme.log
+[Mon Apr  1 14:02:52 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr  1 14:07:48 2024] Launched synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/runme.log
+[Mon Apr  1 14:07:48 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Mon Apr  1 14:11:17 2024] Launched synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/runme.log
+[Mon Apr  1 14:11:17 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr  1 14:13:59 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1367.695 ; gain = 2.797
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ip_1port_ram' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+INFO: [Synth 8-638] synthesizing module 'ram_rw' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ram_rw' (1#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_32x8' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram_32x8' (2#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+WARNING: [Synth 8-3848] Net a in module/entity ip_1port_ram does not have driver. [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ip_1port_ram' (3#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[7]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[6]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[5]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[4]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[3]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[2]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[1]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[0]
+WARNING: [Synth 8-3331] design ip_1port_ram has unconnected port a
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1404.242 ; gain = 39.344
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1404.242 ; gain = 39.344
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.dcp' for cell 'ram_32x8_inst'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1404.242 ; gain = 39.723
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1404.242 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ip_1port_ram' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+INFO: [Synth 8-638] synthesizing module 'ram_rw' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ram_rw' (1#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_32x8' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram_32x8' (2#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ip_1port_ram' (3#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[7]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[6]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[5]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[4]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[3]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[2]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[1]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1413.465 ; gain = 9.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1413.465 ; gain = 9.223
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.dcp' for cell 'ram_32x8_inst'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc:2]
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ip_1port_ram_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 1426.441 ; gain = 22.199
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr  1 14:28:10 2024] Launched synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/runme.log
+[Mon Apr  1 14:28:10 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+reset_run synth_1
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1426.441 ; gain = 0.000
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr  1 14:29:57 2024] Launched synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/runme.log
+[Mon Apr  1 14:29:57 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1426.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ip_1port_ram' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+INFO: [Synth 8-638] synthesizing module 'ram_rw' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ram_rw' (1#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_32x8' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram_32x8' (2#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+WARNING: [Synth 8-3848] Net a in module/entity ip_1port_ram does not have driver. [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ip_1port_ram' (3#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[7]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[6]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[5]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[4]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[3]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[2]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[1]
+WARNING: [Synth 8-3331] design ram_rw has unconnected port ram_rd_data[0]
+WARNING: [Synth 8-3331] design ip_1port_ram has unconnected port a
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1426.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1426.441 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.dcp' for cell 'ram_32x8_inst'
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1431.152 ; gain = 4.711
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr  1 14:46:30 2024] Launched synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/runme.log
+[Mon Apr  1 14:46:30 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_PROBE4_WIDTH {8} CONFIG.C_PROBE3_WIDTH {8} CONFIG.C_PROBE2_WIDTH {5} CONFIG.C_NUM_OF_PROBES {5}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+generate_target all [get_files  c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'...
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs -jobs 8 ila_0_synth_1
+[Mon Apr  1 14:51:29 2024] Launched ila_0_synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/ila_0_synth_1/runme.log
+export_simulation -of_objects [get_files c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.ip_user_files/sim_scripts -ip_user_files_dir C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.ip_user_files -ipstatic_source_dir C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.cache/compile_simlib/modelsim} {questa=C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.cache/compile_simlib/questa} {riviera=C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.cache/compile_simlib/riviera} {activehdl=C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1507.164 ; gain = 23.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ip_1port_ram' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+INFO: [Synth 8-638] synthesizing module 'ram_rw' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+ERROR: [Synth 8-439] module 'ila_0' not found [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:64]
+ERROR: [Synth 8-285] failed synthesizing module 'ram_rw' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+ERROR: [Synth 8-285] failed synthesizing module 'ip_1port_ram' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1540.996 ; gain = 57.121
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+refresh_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1541.078 ; gain = 58.266
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1545.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ip_1port_ram' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+INFO: [Synth 8-638] synthesizing module 'ram_rw' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:64]
+INFO: [Synth 8-638] synthesizing module 'ila_0' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ila_0' (1#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0_inst'. This will prevent further optimization [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:64]
+INFO: [Synth 8-256] done synthesizing module 'ram_rw' (2#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ram_rw.v:1]
+INFO: [Synth 8-638] synthesizing module 'ram_32x8' [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'ram_32x8' (3#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/.Xil/Vivado-18236-LAPTOP-SC6EAKJG/realtime/ram_32x8_stub.v:6]
+WARNING: [Synth 8-3848] Net a in module/entity ip_1port_ram does not have driver. [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:5]
+INFO: [Synth 8-256] done synthesizing module 'ip_1port_ram' (4#1) [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/src/ip_1port_ram.v:2]
+WARNING: [Synth 8-3331] design ip_1port_ram has unconnected port a
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1545.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1545.688 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ram_32x8/ram_32x8.dcp' for cell 'ram_32x8_inst'
+INFO: [Project 1-454] Reading design checkpoint 'c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'ram_rw_inst/ila_0_inst'
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ram_rw_inst/ila_0_inst/inst'
+Finished Parsing XDC File [c:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ram_rw_inst/ila_0_inst/inst'
+Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Finished Parsing XDC File [C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/script/top.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1568.770 ; gain = 24.121
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Apr  1 14:55:50 2024] Launched synth_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/synth_1/runme.log
+[Mon Apr  1 14:55:51 2024] Launched impl_1...
+Run output will be captured here: C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/ip_1port_ram.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/ip_1port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/ip_1port_ram.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/ip_1port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/ip_1port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.runs/impl_1/ip_1port_ram.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ram_rw_inst/ila_0_inst"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ram_rw_inst/ila_0_inst"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Apr-01 15:05:50
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ram_rw_inst/ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ram_rw_inst/ila_0_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Apr-01 15:05:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ram_rw_inst/ila_0_inst"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2024-Apr-01 15:07:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ram_rw_inst/ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ram_rw_inst/ila_0_inst"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2024-Apr-01 15:07:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.hw/backup/hw_ila_data_1.ila. Use Tcl command 'import_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+close_project
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/code/zynq_pri/zynq_study/ip_1port_ram/rtl/syn/top.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  1 15:08:11 2024...
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  1 15:08:18 2024...
