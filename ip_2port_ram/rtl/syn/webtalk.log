@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  1 21:50:52 2024
+# Process ID: 20652
+# Current directory: c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn
+# Command line: wbtcv.exe -mode batch -source C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/webtalk.log
+# Journal file: c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn\webtalk.jou
+#-----------------------------------------------------------
+source C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Apr  1 21:50:54 2024...

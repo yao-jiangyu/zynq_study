@@ -1,0 +1,181 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  1 20:10:34 2024
+# Process ID: 10196
+# Current directory: C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn
+# Command line: vivado.exe -mode tcl -source script/create_prj.tcl
+# Log file: C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/vivado.log
+# Journal file: C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn\vivado.jou
+#-----------------------------------------------------------
+source script/create_prj.tcl
+start_gui
+update_compile_order -fileset sources_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name blk_mem_gen_0 -dir c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip
+set_property -dict [list CONFIG.Memory_Type {Simple_Dual_Port_RAM} CONFIG.Assume_Synchronous_Clk {true} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {64} CONFIG.Read_Width_A {8} CONFIG.Operating_Mode_A {NO_CHANGE} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Operating_Mode_B {READ_FIRST} CONFIG.Enable_B {Use_ENB_Pin} CONFIG.Register_PortA_Output_of_Memory_Primitives {false} CONFIG.Register_PortB_Output_of_Memory_Primitives {false} CONFIG.Port_B_Clock {100} CONFIG.Port_B_Enable_Rate {100}] [get_ips blk_mem_gen_0]
+generate_target {instantiation_template} [get_files c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+generate_target all [get_files  c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all blk_mem_gen_0] }
+export_ip_user_files -of_objects [get_files c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci]
+launch_runs -jobs 8 blk_mem_gen_0_synth_1
+export_simulation -of_objects [get_files c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci] -directory C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.ip_user_files/sim_scripts -ip_user_files_dir C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.ip_user_files -ipstatic_source_dir C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.cache/compile_simlib/modelsim} {questa=C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.cache/compile_simlib/questa} {riviera=C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.cache/compile_simlib/riviera} {activehdl=C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+close_hw
+create_ip -name ila -vendor xilinx.com -library ip -version 6.2 -module_name ila_0 -dir c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip
+set_property -dict [list CONFIG.C_PROBE7_WIDTH {8} CONFIG.C_PROBE6_WIDTH {6} CONFIG.C_PROBE5_WIDTH {8} CONFIG.C_PROBE4_WIDTH {6} CONFIG.C_NUM_OF_PROBES {8}] [get_ips ila_0]
+generate_target {instantiation_template} [get_files c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci]
+generate_target all [get_files  c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci]
+catch { config_ip_cache -export [get_ips -all ila_0] }
+export_ip_user_files -of_objects [get_files c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci]
+launch_runs -jobs 8 ila_0_synth_1
+export_simulation -of_objects [get_files c:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.srcs/sources_1/ip/ila_0/ila_0.xci] -directory C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.ip_user_files/sim_scripts -ip_user_files_dir C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.ip_user_files -ipstatic_source_dir C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.cache/compile_simlib/modelsim} {questa=C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.cache/compile_simlib/questa} {riviera=C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.cache/compile_simlib/riviera} {activehdl=C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes rd_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bF [get_hw_probes rd_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes rd_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+save_wave_config {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"ila_0_inst"}]]
+save_wave_config {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"u_ila_0"}]]
+save_wave_config {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/code/zynq_pri/zynq_study/ip_2port_ram/rtl/syn/top.runs/impl_1/ip_2port_ram.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_project
+compile_simlib -simulator modelsim -simulator_exec_path {C:/modeltech64_2020.4/win64} -family all -language all -library all -dir {C:/modeltech64_2020.4/vivado2017_4_sim_lib}
