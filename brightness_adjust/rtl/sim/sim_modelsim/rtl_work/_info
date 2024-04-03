@@ -1,0 +1,40 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/code/zynq_pri/zynq_study/brightness_adjust/rtl/sim/sim_modelsim
+T_opt
+Z1 !s110 1712151518
+VN8jLO]9K>mGPPW?=P0HY>0
+04 19 4 work read_bmpfile_br_adj fast 0
+=1-68da73ae692a-660d5bde-343-23d0
+o-quiet -auto_acc_if_foreign -work work -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;10.6d;65
+vread_bmpfile_br_adj
+R1
+!i10b 1
+!s100 YR9lBLCSAGQFY3zBG_V_S1
+I`PRT^bmG>E_7kik5XSg`^1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1712151503
+8../../sim/tb_src/read_bmpfile_br_adj.v
+F../../sim/tb_src/read_bmpfile_br_adj.v
+L0 4
+OL;L;10.6d;65
+r1
+!s85 0
+31
+!s108 1712151518.000000
+!s107 ../../sim/tb_src/read_bmpfile_br_adj.v|
+!s90 -reportprogress|300|../../sim/tb_src/read_bmpfile_br_adj.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
