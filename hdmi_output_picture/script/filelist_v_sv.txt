@@ -1,0 +1,8 @@
+C:/code/zynq_pri/zynq_study/hdmi_output_test/rtl/sim/tb_src/tb_hdmi_colorbar_top.v
+C:/code/zynq_pri/zynq_study/hdmi_output_test/rtl/src/asyn_rst_syn.v
+C:/code/zynq_pri/zynq_study/hdmi_output_test/rtl/src/dvi_encoder.v
+C:/code/zynq_pri/zynq_study/hdmi_output_test/rtl/src/dvi_transmitter_top.v
+C:/code/zynq_pri/zynq_study/hdmi_output_test/rtl/src/hdmi_colorbar_top.v
+C:/code/zynq_pri/zynq_study/hdmi_output_test/rtl/src/serializer_10_to_1.v
+C:/code/zynq_pri/zynq_study/hdmi_output_test/rtl/src/video_display.v
+C:/code/zynq_pri/zynq_study/hdmi_output_test/rtl/src/video_driver.v
