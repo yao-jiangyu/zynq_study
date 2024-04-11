@@ -60,16 +60,12 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param simulator.modelsimInstallPath C:/modeltech64_10.6d/win64
-  set_param xicom.use_bs_reader 1
-  set_param synth.incrementalSynthesisCache C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/.Xil/Vivado-14248-LAPTOP-SC6EAKJG/incrSyn
   create_project -in_memory -part xc7z020clg400-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -80,7 +76,7 @@ set rc [catch {
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   add_files -quiet C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.runs/synth_1/hdmi_colorbar_top.dcp
   read_ip -quiet C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet c:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  read_ip -quiet C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
   read_xdc C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/script/top.xdc
   link_design -top hdmi_colorbar_top -part xc7z020clg400-2
   close_msg_db -file init_design.pb

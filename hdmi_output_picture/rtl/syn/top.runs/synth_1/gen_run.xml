@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1712458415">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-2" LaunchTime="1712828874">
   <File Type="PA-TCL" Name="hdmi_colorbar_top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="hdmi_colorbar_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="hdmi_colorbar_top_reports.tcl"/>
@@ -67,6 +67,12 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../alg/imres.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../alg/picture_24.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

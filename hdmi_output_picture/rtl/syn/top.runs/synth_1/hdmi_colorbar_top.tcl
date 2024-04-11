@@ -17,10 +17,6 @@ proc create_report { reportName command } {
   }
 }
 set_param simulator.modelsimInstallPath C:/modeltech64_10.6d/win64
-set_param xicom.use_bs_reader 1
-set_param synth.incrementalSynthesisCache C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/.Xil/Vivado-14248-LAPTOP-SC6EAKJG/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7z020clg400-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,8 +30,9 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo c:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files c:/code/zynq_pri/zynq_study/hdmi_output_picture/alg/iu.coe
-add_files c:/code/zynq_pri/zynq_study/hdmi_output_picture/alg/imres.coe
+add_files C:/code/zynq_pri/zynq_study/hdmi_output_picture/alg/iu.coe
+add_files C:/code/zynq_pri/zynq_study/hdmi_output_picture/alg/imres.coe
+add_files c:/code/zynq_pri/zynq_study/hdmi_output_picture/alg/picture_24.coe
 read_verilog -library xil_defaultlib {
   C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/src/asyn_rst_syn.v
   C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/src/dvi_encoder.v
@@ -50,7 +47,7 @@ set_property used_in_implementation false [get_files -all c:/code/zynq_pri/zynq_
 set_property used_in_implementation false [get_files -all c:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
-read_ip -quiet c:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+read_ip -quiet C:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/code/zynq_pri/zynq_study/hdmi_output_picture/rtl/syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
