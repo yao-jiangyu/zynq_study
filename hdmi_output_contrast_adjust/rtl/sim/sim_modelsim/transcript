@@ -1,0 +1,447 @@
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do ./test.tcl
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work rtl_work 
+# Modifying modelsim.ini
+#        
+# 
+# vlog     	../../src/*.v
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 20:47:48 on Apr 13,2024
+# vlog -reportprogress 300 ../../src/asyn_rst_syn.v ../../src/contrast_adjust.v ../../src/dvi_encoder.v ../../src/dvi_transmitter_top.v ../../src/hdmi_colorbar_top.v ../../src/serializer_10_to_1.v ../../src/video_display.v ../../src/video_driver.v 
+# -- Compiling module asyn_rst_syn
+# -- Compiling module contrast_adjust
+# -- Compiling module dvi_encoder
+# -- Compiling module dvi_transmitter_top
+# -- Compiling module hdmi_colorbar_top
+# -- Compiling module serializer_10_to_1
+# -- Compiling module video_display
+# -- Compiling module video_driver
+# 
+# Top level modules:
+# 	hdmi_colorbar_top
+# End time: 20:47:48 on Apr 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../sim/tb_src/*.v
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 20:47:48 on Apr 13,2024
+# vlog -reportprogress 300 ../../sim/tb_src/tb_hdmi_colorbar_top.v 
+# -- Compiling module tb_hdmi_colorbar_top
+# 
+# Top level modules:
+# 	tb_hdmi_colorbar_top
+# End time: 20:47:48 on Apr 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog     	../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 20:47:48 on Apr 13,2024
+# vlog -reportprogress 300 ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v 
+# -- Compiling module blk_mem_gen_0
+# -- Compiling module blk_mem_gen_0_bindec
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_generic_cstr
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_mux
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized0
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized1
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized10
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized11
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized12
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized13
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized14
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized15
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized16
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized17
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized18
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized19
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized2
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized20
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized21
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized22
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized23
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized24
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized25
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized26
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized3
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized4
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized5
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized6
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized7
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized8
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_width__parameterized9
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized0
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized1
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized10
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized11
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized12
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized13
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized14
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized15
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized16
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized17
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized18
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized19
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized2
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized20
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized21
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized22
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized23
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized24
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized25
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized26
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized3
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized4
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized5
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized6
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized7
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized8
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_prim_wrapper_init__parameterized9
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_top
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_v8_4_1
+# -- Compiling module blk_mem_gen_0_blk_mem_gen_v8_4_1_synth
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	blk_mem_gen_0
+# 	glbl
+# End time: 20:47:49 on Apr 13,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog     	../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 20:47:49 on Apr 13,2024
+# vlog -reportprogress 300 ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v 
+# -- Compiling module clk_wiz_0
+# -- Compiling module clk_wiz_0_clk_wiz_0_clk_wiz
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	clk_wiz_0
+# 	glbl
+# End time: 20:47:49 on Apr 13,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# 
+# 
+# set rnd_seed [clock seconds]
+# 1713012469
+# 
+# vsim -t 1ps -L rtl_work -L work +SEED=${rnd_seed} -voptargs="+acc" tb_hdmi_colorbar_top
+# vsim -t 1ps -L rtl_work -L work "+SEED=1713012469" -voptargs=""+acc"" tb_hdmi_colorbar_top 
+# Start time: 20:47:49 on Apr 13,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(82): Module 'BUFG' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(91): Module 'IBUF' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(95): Module 'BUFG' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(99): Module 'BUFG' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(152): Module 'MMCME2_ADV' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(9378): Module 'GND' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(207): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(216): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(225): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(234): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(243): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(252): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(261): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(270): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(279): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(288): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(951): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(960): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(969): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(978): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(988): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(998): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1007): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1016): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1026): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1036): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1045): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1054): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1064): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1074): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1083): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1092): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1102): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1112): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1121): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1130): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1140): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1150): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1159): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1168): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1178): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1188): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1197): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1206): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1216): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1226): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1235): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1244): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1254): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1264): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1273): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1282): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1292): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1302): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1311): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1320): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1330): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1340): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1349): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1358): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1367): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1377): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1387): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1396): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1405): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1415): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1425): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1434): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1443): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1453): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1463): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1472): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1481): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1491): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1501): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1510): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1519): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1528): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1537): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1546): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1555): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1565): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1575): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1584): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1593): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1603): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1613): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1622): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1631): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1641): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1651): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1660): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1669): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1679): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1689): Module 'FDRE' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1697): Module 'FDRE' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1705): Module 'FDRE' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1713): Module 'FDRE' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(567): Module 'LUT2' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(2652): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(9057): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(3288): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(3529): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(3770): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4011): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4252): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4493): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4734): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4975): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(5216): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(2811): Module 'RAMB18E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(2836): Module 'LUT4' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(5457): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(5936): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(6177): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(6418): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(6659): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(6900): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(7141): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(7382): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(3047): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(5695): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(7620): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(7858): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(8096): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(8334): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(8575): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(8816): Module 'RAMB36E1' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(52): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(96): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(52): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(96): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(52): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(96): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(52): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(96): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/dvi_transmitter_top.v(141): Module 'OBUFDS' is not defined.
+# ** Error: ../../src/dvi_transmitter_top.v(149): Module 'OBUFDS' is not defined.
+# ** Error: ../../src/dvi_transmitter_top.v(157): Module 'OBUFDS' is not defined.
+# ** Error: ../../src/dvi_transmitter_top.v(165): Module 'OBUFDS' is not defined.
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ././test.tcl PAUSED at line 19
+# Load canceled
+# Load canceled
+vsim -voptargs=+acc rtl_work.tb_hdmi_colorbar_top
+# vsim -voptargs="+acc" rtl_work.tb_hdmi_colorbar_top 
+# Start time: 20:47:49 on Apr 13,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(82): Module 'BUFG' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(91): Module 'IBUF' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(95): Module 'BUFG' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(99): Module 'BUFG' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v(152): Module 'MMCME2_ADV' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(9378): Module 'GND' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(207): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(216): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(225): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(234): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(243): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(252): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(261): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(270): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(279): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(288): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(951): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(960): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(969): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(978): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(988): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(998): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1007): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1016): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1026): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1036): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1045): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1054): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1064): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1074): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1083): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1092): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1102): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1112): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1121): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1130): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1140): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1150): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1159): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1168): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1178): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1188): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1197): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1206): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1216): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1226): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1235): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1244): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1254): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1264): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1273): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1282): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1292): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1302): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1311): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1320): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1330): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1340): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1349): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1358): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1367): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1377): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1387): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1396): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1405): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1415): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1425): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1434): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1443): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1453): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1463): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1472): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1481): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1491): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1501): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1510): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1519): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1528): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1537): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1546): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1555): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1565): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1575): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1584): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1593): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1603): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1613): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1622): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1631): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1641): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1651): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1660): Module 'LUT5' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1669): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1679): Module 'LUT6' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1689): Module 'FDRE' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1697): Module 'FDRE' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1705): Module 'FDRE' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(1713): Module 'FDRE' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(567): Module 'LUT2' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(2652): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(9057): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(3288): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(3529): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(3770): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4011): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4252): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4493): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4734): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(4975): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(5216): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(2811): Module 'RAMB18E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(2836): Module 'LUT4' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(5457): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(5936): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(6177): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(6418): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(6659): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(6900): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(7141): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(7382): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(3047): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(5695): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(7620): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(7858): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(8096): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(8334): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(8575): Module 'RAMB36E1' is not defined.
+# ** Error: ../../syn/top.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.v(8816): Module 'RAMB36E1' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(52): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(96): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(52): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(96): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(52): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(96): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(52): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/serializer_10_to_1.v(96): Module 'OSERDESE2' is not defined.
+# ** Error: ../../src/dvi_transmitter_top.v(141): Module 'OBUFDS' is not defined.
+# ** Error: ../../src/dvi_transmitter_top.v(149): Module 'OBUFDS' is not defined.
+# ** Error: ../../src/dvi_transmitter_top.v(157): Module 'OBUFDS' is not defined.
+# ** Error: ../../src/dvi_transmitter_top.v(165): Module 'OBUFDS' is not defined.
+# Optimization failed
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ././test.tcl PAUSED at line 19
+# End time: 21:05:10 on Apr 13,2024, Elapsed time: 0:17:21
+# Errors: 280, Warnings: 0

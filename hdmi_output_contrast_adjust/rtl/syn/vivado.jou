@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Apr 14 10:55:59 2024
+# Process ID: 1188
+# Current directory: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9776 C:\code\zynq_pri\zynq_study\hdmi_output_contrast_adjust\rtl\syn\top.xpr
+# Log file: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/vivado.log
+# Journal file: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.xpr
+update_compile_order -fileset sources_1
+add_files -norecurse C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/src/fifo.v
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property needs_refresh false [get_runs clk_wiz_0_synth_1]
+set_property needs_refresh false [get_runs blk_mem_gen_0_synth_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+launch_simulation -install_path C:/modeltech64_10.6d/win64
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.runs/impl_1/hdmi_colorbar_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+close_project

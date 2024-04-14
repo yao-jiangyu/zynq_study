@@ -1,0 +1,39 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto a1c1d84bd2804f908f8da9db13417a58 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_hdmi_colorbar_top_behav xil_defaultlib.tb_hdmi_colorbar_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 19 differs from formal bit length 16 for port addra [C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/src/video_display.v:84]
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=15.0,...
+Compiling module unisims_ver.BUFG_2
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.video_driver
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.contrast_adjust
+Compiling module xil_defaultlib.video_display
+Compiling module xil_defaultlib.asyn_rst_syn
+Compiling module xil_defaultlib.dvi_encoder
+Compiling secureip modules ...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling secureip modules ...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serializer_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")_2
+Compiling module xil_defaultlib.dvi_transmitter_top
+Compiling module xil_defaultlib.hdmi_colorbar_top
+Compiling module xil_defaultlib.tb_hdmi_colorbar_top
+Built simulation snapshot tb_hdmi_colorbar_top_behav

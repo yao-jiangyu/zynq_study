@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Apr 13 21:03:00 2024
+# Process ID: 17888
+# Current directory: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_colorbar_top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.sim/sim_1/behav/xsim/xsim.dir/tb_hdmi_colorbar_top_behav/webtalk/xsim_webtalk.tcl -notrace

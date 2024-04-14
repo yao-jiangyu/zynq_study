@@ -1,0 +1,273 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun Apr 14 20:25:58 2024
+| Host         : LAPTOP-SC6EAKJG running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file hdmi_colorbar_top_control_sets_placed.rpt
+| Design       : hdmi_colorbar_top
+| Device       : xc7z020
+----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   210 |
+| Unused register locations in slices containing registers |    31 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              85 |           46 |
+| No           | No                    | Yes                    |             199 |           73 |
+| No           | Yes                   | No                     |              18 |            6 |
+| Yes          | No                    | No                     |            4824 |         1960 |
+| Yes          | No                    | Yes                    |              67 |           21 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+------------------------------------------------+---------------------------------------+------------------+----------------+
+|       Clock Signal       |                  Enable Signal                 |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------------+------------------------------------------------+---------------------------------------+------------------+----------------+
+|  clk_wiz_0/inst/clk_out1 |                                                | u_rgb2dvi_0/reset_syn/reset_1_i_1_n_0 |                1 |              2 |
+|  clk_wiz_0/inst/clk_out1 | u_video_driver/fifo_wr_en                      | u_video_display/rd_ptr_reg[0]_rep__7  |                5 |              8 |
+|  clk_wiz_0/inst/clk_out1 | u_video_driver/cnt_v                           | u_video_display/rd_ptr_reg[0]_rep__7  |                3 |             11 |
+|  clk_wiz_0/inst/clk_out1 | u_video_driver/rom_addr_reg[15]                | u_video_display/rd_ptr_reg[0]_rep__7  |                4 |             16 |
+|  clk_wiz_0/inst/clk_out1 |                                                | u_rgb2dvi_0/encoder_b/din_q_reg[7]_0  |                6 |             18 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[167][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[28][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[29][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[30][23]_i_1_n_0  |                                       |               14 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[182][23]_i_1_n_0 |                                       |               15 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[177][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[190][23]_i_1_n_0 |                                       |               14 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[194][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[32][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[189][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[173][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[16][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[26][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[19][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[1][23]_i_1_n_0   |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[21][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[23][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[2][23]_i_1_n_0   |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[178][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[31][23]_i_1_n_0  |                                       |               16 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[33][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[166][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[168][23]_i_1_n_0 |                                       |               16 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[172][23]_i_1_n_0 |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[180][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[181][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[184][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[186][23]_i_1_n_0 |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[192][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[183][23]_i_1_n_0 |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[179][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[187][23]_i_1_n_0 |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[174][23]_i_1_n_0 |                                       |               15 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[193][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[164][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[18][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[188][23]_i_1_n_0 |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[195][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[169][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[175][23]_i_1_n_0 |                                       |               14 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[196][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[197][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[171][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[176][23]_i_1_n_0 |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[191][23]_i_1_n_0 |                                       |               18 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[198][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[199][23]_i_1_n_0 |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[20][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[22][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[17][23]_i_1_n_0  |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[25][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[24][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[165][23]_i_1_n_0 |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[170][23]_i_1_n_0 |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[185][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[27][23]_i_1_n_0  |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[53][23]_i_1_n_0  |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[44][23]_i_1_n_0  |                                       |               16 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[38][23]_i_1_n_0  |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[45][23]_i_1_n_0  |                                       |               16 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[58][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[56][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[64][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[74][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[42][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[49][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[52][23]_i_1_n_0  |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[48][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[66][23]_i_1_n_0  |                                       |               14 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[61][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[54][23]_i_1_n_0  |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[62][23]_i_1_n_0  |                                       |               14 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[41][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[70][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[73][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[59][23]_i_1_n_0  |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[51][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[47][23]_i_1_n_0  |                                       |               20 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[50][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[4][23]_i_1_n_0   |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[68][23]_i_1_n_0  |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[37][23]_i_1_n_0  |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[6][23]_i_1_n_0   |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[75][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[78][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[79][23]_i_1_n_0  |                                       |               17 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[7][23]_i_1_n_0   |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[76][23]_i_1_n_0  |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[80][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[81][23]_i_1_n_0  |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[82][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[57][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[43][23]_i_1_n_0  |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[65][23]_i_1_n_0  |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[63][23]_i_1_n_0  |                                       |               16 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[39][23]_i_1_n_0  |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[83][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[36][23]_i_1_n_0  |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[3][23]_i_1_n_0   |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[40][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[35][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[60][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[67][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[5][23]_i_1_n_0   |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[71][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[34][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[72][23]_i_1_n_0  |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[46][23]_i_1_n_0  |                                       |               15 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[69][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[55][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[77][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[86][23]_i_1_n_0  |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[97][23]_i_1_n_0  |                                       |               15 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[84][23]_i_1_n_0  |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[96][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[98][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[9][23]_i_1_n_0   |                                       |               14 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[85][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[95][23]_i_1_n_0  |                                       |               15 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[94][23]_i_1_n_0  |                                       |               15 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[8][23]_i_1_n_0   |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[99][23]_i_1_n_0  |                                       |               16 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[93][23]_i_1_n_0  |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[88][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[92][23]_i_1_n_0  |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[89][23]_i_1_n_0  |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[90][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[91][23]_i_1_n_0  |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[87][23]_i_1_n_0  |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[107][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[148][23]_i_1_n_0 |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[110][23]_i_1_n_0 |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[119][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[127][23]_i_1_n_0 |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[139][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[125][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[100][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[118][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[131][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[137][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[129][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[108][23]_i_1_n_0 |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[10][23]_i_1_n_0  |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[133][23]_i_1_n_0 |                                       |                4 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[141][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[117][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[123][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[128][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[134][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[135][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[116][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[122][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[121][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[115][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[109][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[142][23]_i_1_n_0 |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[143][23]_i_1_n_0 |                                       |               17 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[144][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[145][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[102][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[103][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[138][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[13][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[146][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[112][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[114][23]_i_1_n_0 |                                       |                5 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[124][23]_i_1_n_0 |                                       |               12 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[111][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[11][23]_i_1_n_0  |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[104][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[113][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[120][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[130][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[136][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[0][23]_i_1_n_0   |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[101][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[132][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[12][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[140][23]_i_1_n_0 |                                       |                6 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[106][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[105][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[126][23]_i_1_n_0 |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[147][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[14][23]_i_1_n_0  |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[156][23]_i_1_n_0 |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[157][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[158][23]_i_1_n_0 |                                       |               13 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[151][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[152][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[150][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[149][23]_i_1_n_0 |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[153][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[15][23]_i_1_n_0  |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[155][23]_i_1_n_0 |                                       |                8 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[163][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[154][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[159][23]_i_1_n_0 |                                       |               15 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[161][23]_i_1_n_0 |                                       |               11 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[162][23]_i_1_n_0 |                                       |               10 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_display/u_fifo/buffer[160][23]_i_1_n_0 |                                       |                9 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_driver/E[0]                            |                                       |                7 |             24 |
+|  clk_wiz_0/inst/clk_out1 | u_video_driver/fifo_rd_en                      | u_video_display/rd_ptr_reg[0]_rep__7  |                9 |             32 |
+|  clk_wiz_0/inst/clk_out1 |                                                | u_rgb2dvi_0/reset_syn/AR[0]           |               19 |             42 |
+|  clk_wiz_0/inst/clk_out1 |                                                |                                       |               46 |             85 |
+|  clk_wiz_0/inst/clk_out1 |                                                | u_video_display/rd_ptr_reg[0]_rep__7  |               53 |            155 |
++--------------------------+------------------------------------------------+---------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 8      |                     1 |
+| 11     |                     1 |
+| 16+    |                   207 |
++--------+-----------------------+
+
+
