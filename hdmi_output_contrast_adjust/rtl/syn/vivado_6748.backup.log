@@ -2,13 +2,21 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Apr 30 20:03:37 2024
-# Process ID: 19832
+# Start of session at: Sun Apr 28 21:40:39 2024
+# Process ID: 6748
 # Current directory: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16040 C:\code\zynq_pri\zynq_study\hdmi_output_contrast_adjust\rtl\syn\top.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23368 C:\code\zynq_pri\zynq_study\hdmi_output_contrast_adjust\rtl\syn\top.xpr
 # Log file: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/vivado.log
 # Journal file: C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/code/zynq_pri/zynq_study/hdmi_output_contrast_adjust/rtl/syn/top.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 778.852 ; gain = 69.070
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 28 21:43:30 2024...
