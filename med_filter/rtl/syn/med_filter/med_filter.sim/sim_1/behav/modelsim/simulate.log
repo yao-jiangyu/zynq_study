@@ -3805,3 +3805,5 @@ run -continue
 # blk_mem_gen_v8_4_1 WARNING: Address 1d4c0 is outside range for A Read
 # Break key hit
 # Simulation stop requested.
+# End time: 19:16:29 on May 01,2024, Elapsed time: 9:22:30
+# Errors: 0, Warnings: 1
