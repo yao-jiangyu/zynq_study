@@ -1,0 +1,15 @@
+C:/code/zynq_pri/zynq_study/histogram_eq/src/SPRF262144X8.v {1 {vlog -work work -novopt -stats=none C:/code/zynq_pri/zynq_study/histogram_eq/src/SPRF262144X8.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module SPRF262144X8
+
+Top level modules:
+	SPRF262144X8
+
+} {} {}} C:/code/zynq_pri/zynq_study/histogram_eq/sim/tb/histogram_equalization_tb.v {1 {vlog -work work -novopt -stats=none C:/code/zynq_pri/zynq_study/histogram_eq/sim/tb/histogram_equalization_tb.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module histogram_equalization_tb
+
+Top level modules:
+	histogram_equalization_tb
+
+} {} {}}

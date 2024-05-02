@@ -1,0 +1,96 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modeltech64_10.6d/examples
+vhistogram_equalization
+Z0 !s110 1714619428
+!i10b 1
+!s100 e<k;94<;^N5H04OLh[fh60
+IWB^bHM8RoIF?D25X[gcX=0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/code/zynq_pri/zynq_study/histogram_eq/sim/sim_pri
+w1714619417
+8C:/code/zynq_pri/zynq_study/histogram_eq/src/histogram_equalization.v
+FC:/code/zynq_pri/zynq_study/histogram_eq/src/histogram_equalization.v
+L0 20
+Z3 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z4 !s108 1714619428.000000
+!s107 C:/code/zynq_pri/zynq_study/histogram_eq/src/histogram_equalization.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|C:/code/zynq_pri/zynq_study/histogram_eq/src/histogram_equalization.v|
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+vhistogram_equalization_tb
+R0
+!i10b 1
+!s100 1GGHH0boo[f@Q34XXzB=50
+IO5UfV6CQTzl0H[1cJ03K>0
+R1
+R2
+w1714616515
+8C:/code/zynq_pri/zynq_study/histogram_eq/sim/tb/histogram_equalization_tb.v
+FC:/code/zynq_pri/zynq_study/histogram_eq/sim/tb/histogram_equalization_tb.v
+L0 21
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/code/zynq_pri/zynq_study/histogram_eq/sim/tb/histogram_equalization_tb.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|C:/code/zynq_pri/zynq_study/histogram_eq/sim/tb/histogram_equalization_tb.v|
+!i113 1
+R5
+R6
+vSPRF262144X8
+Z7 !s110 1714619429
+!i10b 1
+!s100 [[OTR3Y39gW_OPKdbBzbO0
+I4Ud]Kl82^koc]_0493;aJ0
+R1
+R2
+w1714576572
+8C:/code/zynq_pri/zynq_study/histogram_eq/src/SPRF262144X8.v
+FC:/code/zynq_pri/zynq_study/histogram_eq/src/SPRF262144X8.v
+Z8 L0 23
+R3
+r1
+!s85 0
+31
+Z9 !s108 1714619429.000000
+!s107 C:/code/zynq_pri/zynq_study/histogram_eq/src/SPRF262144X8.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|C:/code/zynq_pri/zynq_study/histogram_eq/src/SPRF262144X8.v|
+!i113 1
+R5
+R6
+n@s@p@r@f262144@x8
+vTPRF256X18
+R7
+!i10b 1
+!s100 KOHHMjZA<gdT[`Ub0b08<2
+I7:8QRV8RfKBLWIBOD6[V21
+R1
+R2
+w1714618836
+8C:/code/zynq_pri/zynq_study/histogram_eq/src/TPRF256X18.v
+FC:/code/zynq_pri/zynq_study/histogram_eq/src/TPRF256X18.v
+R8
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/code/zynq_pri/zynq_study/histogram_eq/src/TPRF256X18.v|
+!s90 -reportprogress|300|-work|work|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|C:/code/zynq_pri/zynq_study/histogram_eq/src/TPRF256X18.v|
+!i113 1
+R5
+R6
+n@t@p@r@f256@x18
