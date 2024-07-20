@@ -1,5 +1,5 @@
 ### ============= Specify the project name and working directory
-set proj_name "vivado_led"
+set proj_name "DDS_test"
 set work_dir [pwd]
 
 ### ============= Specify the top module of the design
