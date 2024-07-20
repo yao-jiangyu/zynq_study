@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jul 20 17:57:06 2024
+# Process ID: 3216
+# Current directory: C:/code/zynq_pri/zynq_study/DDS_test/rtl/syn/DDS_test/DDS_test.runs/impl_1
+# Command line: vivado.exe -log DDS_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DDS_test.tcl -notrace
+# Log file: C:/code/zynq_pri/zynq_study/DDS_test/rtl/syn/DDS_test/DDS_test.runs/impl_1/DDS_test.vdi
+# Journal file: C:/code/zynq_pri/zynq_study/DDS_test/rtl/syn/DDS_test/DDS_test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source DDS_test.tcl -notrace
